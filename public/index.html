@@ -12,7 +12,18 @@
     ></script>
 </head>
 <body>
-    <div id="openseadragon1" style="width: 800px; height: 600px;"></div>
+
+    <div class="row" style="display:grid;grid-template-columns: 1fr 1fr;width: 100%;">
+     <div id="openseadragon1" style="width: 600px; height: 381px;justify-self: center; border-style: solid" class="column"></div>
+    
+     <div id="openseadragon2" style="width: 600px; height: 381px;justify-self: center; border-style: solid" class="column"></div>
+     <div style="justify-self: center;" class="column" >
+        <h2>Personal</h2>
+     </div>   
+     <div style="justify-self: center;" class="column" >
+        <h2>Guest</h2>
+     </div> 
+    </div>
 <script src="../openseadragon/openseadragon.min.js"></script>
 <script src="../openseadragon/openseadragon-imaginghelper.js"></script>
 <script src="syncview.js"></script>
