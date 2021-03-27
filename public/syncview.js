@@ -1,5 +1,5 @@
-var socket = io.connect("172.16.20.50:8000");
-// var socket = io.connect("http://localhost:8000");
+// var socket = io.connect("172.16.20.50:8000");
+var socket = io.connect("http://localhost:8000");
 var viewer1 = OpenSeadragon({
   id: "openseadragon1",
   prefixUrl: "../openseadragon/images/",
