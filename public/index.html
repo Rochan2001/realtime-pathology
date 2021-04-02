@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real time pathology</title>
-     <script
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"
       integrity="sha512-2RDFHqfLZW8IhPRvQYmK9bTLfj/hddxGXQAred2wNZGkrKQkLGj8RCkXfRJPHlDerdHHIzTFaahq4s/P4V6Qig=="
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+    <style>
+      #openseadragon2 {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="row"
+      style="display: grid; grid-template-columns: 1fr 1fr; width: 100%"
+    >
+      <div
+        id="openseadragon1"
+        style="
+          width: 600px;
+          height: 381px;
+          justify-self: center;
+          border-style: solid;
+        "
+        class="column"
+      ></div>
 
-    <div class="row" style="display:grid;grid-template-columns: 1fr 1fr;width: 100%;">
-     <div id="openseadragon1" style="width: 600px; height: 381px;justify-self: center; border-style: solid" class="column"></div>
-    
-     <div id="openseadragon2" style="width: 600px; height: 381px;justify-self: center; border-style: solid" class="column"></div>
-     <div style="justify-self: center;" class="column" >
-        <h2>Personal</h2>
-     </div>   
-     <div style="justify-self: center;" class="column" >
-        <h2>Guest</h2>
-     </div> 
+      <div
+        id="openseadragon2"
+        style="
+          width: 600px;
+          height: 381px;
+          justify-self: center;
+          border-style: solid;
+        "
+        class="column"
+      ></div>
+      <div style="justify-self: center" class="column">
+        <h2 id="doc1">Personal</h2>
+      </div>
+      <div style="justify-self: center" class="column">
+        <h2 id="doc2">Guest</h2>
+      </div>
     </div>
-<script src="../openseadragon/openseadragon.min.js"></script>
-<script src="../openseadragon/openseadragon-imaginghelper.js"></script>
-<script src="syncview.js"></script>
-</body>
+    <script src="../openseadragon/openseadragon.min.js"></script>
+    <script src="../openseadragon/openseadragon-imaginghelper.js"></script>
+    <script src="syncview.js"></script>
+  </body>
 </html>
