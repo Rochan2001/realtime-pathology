@@ -16,9 +16,14 @@ app.use(express.static("public"));
 
 io.on("connection", (socket) => {
   console.log("Socket connection made " + socket.id);
+
   socket.on("message", function (data) {
     data.type = "event";
     data.socketId = socket.id;
     io.sockets.emit("message", data);
+  });
+
+  socket.on("chat", function (data) {
+    io.sockets.emit("chat", data);
   });
 });
