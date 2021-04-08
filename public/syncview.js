@@ -24,20 +24,10 @@ var viewer2 = OpenSeadragon({
 // var anno = OpenSeadragon.Annotorious(viewer1);
 // console.log(anno);
 // anno.addAnnotation(annotation);
-viewer1.initializeAnnotations();
 
 socket.on("connect", function () {
   document.getElementById("doc1").innerHTML = "docId: " + socket.id.toString();
 });
-
-function annotation(event) {
-  if (viewer1.annotations.get().length !== 0) {
-    var data = {
-      annotation: viewer1.annotations.get(),
-    };
-    socket.emit("message", data);
-  }
-}
 
 viewer1.addHandler("canvas-drag", function () {
   const center = viewer1.viewport.getCenter();

@@ -18,6 +18,7 @@
     </style>
   </head>
   <body>
+    <a href="annotation.html"><button>Annotation</button></a>
     <div
       class="row"
       style="display: grid; grid-template-columns: 1fr 1fr; width: 100%"
@@ -65,14 +66,13 @@
           </div>
           <div id="feedback"></div>
         </div>
-        <input type="text" id="handle" placeholder="Handle" />
-        <input type="text" id="message" placeholder="Message" />
+        <input class="INPUT" type="text" id="handle" placeholder="Handle" />
+        <input class="INPUT" type="text" id="message" placeholder="Message" />
         <button id="send">Send</button>
       </div>
     </div>
     <script src="../openseadragon/openseadragon.min.js"></script>
     <!-- <script src="../openseadragon/openseadragon-annotorious.min.js"></script> -->
-    <script src="../openseadragon-annotations-1.0.5/dist/openseadragon-annotations.js"></script>
     <script src="syncview.js"></script>
   </body>
 </html>

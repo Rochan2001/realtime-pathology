@@ -1,3 +1,5 @@
+var doc_value;
+
 var OpenSeadragon = OpenSeadragon || {};
 (OpenSeadragon.Viewer = OpenSeadragon.Viewer || {}),
   (OpenSeadragon.Viewer.prototype = OpenSeadragon.Viewer.prototype || {}),
@@ -1351,12 +1353,18 @@ var OpenSeadragon = OpenSeadragon || {};
       Object.defineProperty(t, "__esModule", { value: !0 }), (t.default = i);
       var o = {
         getPath: function (e, t) {
+          if (document.getElementById("doc1").checked) {
+            doc_value = document.getElementById("doc1").value;
+          } else {
+            doc_value = "green";
+          }
+          console.log(typeof doc_value);
           return [
             "path",
             {
               fill: "none",
               d: "M" + e + " " + t,
-              stroke: "red",
+              stroke: doc_value,
               "stroke-width": 3,
               "stroke-linejoin": "round",
               "stroke-linecap": "round",

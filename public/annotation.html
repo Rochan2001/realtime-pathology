@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real time pathology</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"
+      integrity="sha512-2RDFHqfLZW8IhPRvQYmK9bTLfj/hddxGXQAred2wNZGkrKQkLGj8RCkXfRJPHlDerdHHIzTFaahq4s/P4V6Qig=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Annotations</h1>
+    <input type="radio" id="doc1" name="doc" value="red" checked="checked" />
+    <label for="doc1">Doc1</label><br />
+    <input type="radio" id="doc2" name="doc" value="green" />
+    <label for="doc2">Doc2</label><br />
+    <div style="display: grid; width: 100%">
+      <div
+        onclick="annotation(event)"
+        id="openseadragon1"
+        style="
+          width: 600px;
+          height: 381px;
+          justify-self: center;
+          border-style: solid;
+        "
+      ></div>
+    </div>
+
+    <script src="../openseadragon/openseadragon.min.js"></script>
+    <script src="../openseadragon-annotations-1.0.6/dist/openseadragon-annotations.js"></script>
+    <script src="annotationsyncview.js"></script>
+  </body>
+</html>
