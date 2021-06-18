@@ -2,6 +2,9 @@
 
 Syncs instances of wsi images using sockets.io and openseadragon api.
 
+## Demo
+* Click here to see the demo https://youtu.be/wMPQcVvc6yg
+
 ## setup
 
 * Clone or download the zip file.
