@@ -2,7 +2,7 @@
 This project was submitted as a code challenge for GSOC 2021 and the organisation was [CaMicroscope](https://github.com/camicroscope/caMicroscope)
 
 ## Purpose
-The purpose of this prototype was to show how pathologists from different regions can collobarate and work together.
+The purpose of this prototype was to show how pathologists from different regions can collaborate and work together.
 
 ## Description
 In this project we use WSI(whole slide images) to represent the tissue in a digital format. We are able to visualize these tissue slide images in browser using [openseadragon](https://github.com/openseadragon/openseadragon) api. If we open the index.html page we can see the tissue image and below a chat window.
