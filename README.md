@@ -13,7 +13,7 @@ To make the sync of WSI instances work we have used sockets.io library and for v
 
 
 ## Demo
-* Click here to see the demo https://youtu.be/wMPQcVvc6yg
+* Click here to see the demo https://www.youtube.com/watch?v=wMPQcVvc6yg
 
 ## setup
 
